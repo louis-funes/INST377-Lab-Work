@@ -1,62 +1,62 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title> Louis Funes's Lab 1 </title>
+  <meta charset="UTF-8">
+  <title> Louis Funes's Lab 2 </title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-
 <body>
-    <div>
-        <header><h1>Louis Funes's Labs For INST377</h1></header>
 
+<div class="wrapper"> <!-- #wrapper -->
 
-        <div>
+  <header class="header"><h1>Louis Funes's Labs For INST377</h1></header>
 
-            <div>
-            <h2>Album Names</h2>
-            <ol>
-                <li>Mac Miller - The Divine Feminine</li>
-                <li>Joji - Nectar</li>
-                <li>Harry Styles - Fine Line</li>
-                <li>System of a Down - Toxicity</li>
-                <li>Lana Del Rey - Born to Die</li>
-            </ol>
-            </div>
+  <div class="container"> <!-- #container -->
 
-
-
-            <div>
-                <h2>Image Carousel</h2>
-
-                <div>
-                   <!-- #contain the four images -->
-                    <img src="images/mochi.gif"/>
-                    <img src="images/mochi.jpg"/>
-                    <img src="images/mochi.png"/>
-                    <img src="images/mochi.svg"/>
-                </div>
-
-                <div>
-                    <!-- #description of images -->
-                    <ol>
-                        <li>The first image is a gif type file that creates an animation.</li>
-                        <li>The second image is a jpg type file which is great for large color palettes such as photographies.</li>
-                        <li>The third image is a png file type which is almost similar with the human-eye. This type is great for icons, diagrams, etc.</li>
-                        <li>The fourth image is a svg file type which is vector-based graphics that can scale or change its size. </li>
-                    </ol>
-                </div>
-
-            </div>
-
-        </div>
-
+    <div class="left_section box"> <!-- #left sec -->
+      <h2>Album Names</h2>
+      <ol class="box">
+        <li>Mac Miller - The Divine Feminine</li>
+        <li>Joji - Nectar</li>
+        <li>Harry Styles - Fine Line</li>
+        <li>System of a Down - Toxicity</li>
+        <li>Lana Del Rey - Born to Die</li>
+      </ol>
     </div>
 
-    <footer>
-        <p>Github account name: louis-funes</p>
-        <a href="https://github.com/louis-funes">UMD INST377 - Louis Funes's Github account</a>
-    </footer>
+
+
+    <div class="right_section box"> <!-- #right sec -->
+      <h2>Image Carousel</h2>
+      <div class="carousel">
+        <button class="prev">prev</button> <!-- #prev button -->
+        <div class="slides"> <!-- #contain the four images -->
+          <div class="carousel_item visible"><img id="pic1" src="images/1B.PNG" alt="Batman pose."/></div>
+          <div class="carousel_item hidden"><img id="pic2" src="images/2J.PNG" alt="Joker pose."/></div>
+          <div class="carousel_item hidden"><img id="pic3" src="images/3S.PNG" alt="Spiderman pose."/></div>
+          <div class="carousel_item hidden"><img id="pic4" src="images/4W.PNG" alt="Wolverine pose."/></div>
+        </div>
+        <button class="next">next</button> <!-- #next button -->
+      </div>
+
+      <div class="box"> <!-- #description of images -->
+        <ol>
+          <li>Batman says "It’s Not Who I Am Underneath, But What I Do That Defines Me."</li>
+          <li>Joker says "Why So Serious?"</li>
+          <li>Spiderman says "Remember, With Great Power Comes Great Responsibility."</li>
+          <li>Wolverine says "Fill Your Heart With Better Memories. Better Actions. Better Friends." </li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer"> <!-- #footer  -->
+    Github account name: louis-funes -> <a href="https://github.com/louis-funes">UMD INST377 - Louis Funes's Github account</a>
+  </footer>
+</div>
+
+<script src="script.js" ></script>
 </body>
 </html>
