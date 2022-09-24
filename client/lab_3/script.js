@@ -6,18 +6,26 @@
   Please feel free to edit away - the main version of this with all the notes is safely stored elsewhere
 */
 /* eslint-enable max-len */
-// set our first slide's position to "0", the opening position in an array
+
+// Done // set our first slide's position to "0", the opening position in an array
 let slidePosition = 0;
 
-// gather a reference to every slide we're using via the class name and querySelectorAll
+// Done // gather a reference to every slide we're using via the class name and querySelectorAll
 const slides = document.querySelectorAll('.carousel_item');
 
-// change that "NodeList" into a Javascript "array", to get access to "array methods"
+// Done // change that "NodeList" into a Javascript "array", to get access to "array methods"
 const slidesArray = Array.from(slides);
 
-// Figure out how many slides we have available
+// Done // Figure out how many slides we have available
 const totalSlides = slidesArray.length;
 
+/* Done
+ // Using the .forEach array method, (array.forEach((element) => { per-element work goes here }))
+    // loop through all the slides in your slideArray
+    // and remove the 'visible' class from each classList
+    // then add a class 'hidden' to all of them
+    // outside your .forEach,
+    // add a 'visible' class to the slide at the current slidePosition in slides */
 function updateSlidePosition() {
   slidesArray.forEach((slide) => {
     slide.classList.remove('visible');
@@ -26,23 +34,15 @@ function updateSlidePosition() {
 
   console.log(slidePosition);
   slides[slidePosition].classList.add('visible');
-  // Using the .forEach array method, (array.forEach((element) => { per-element work goes here }))
-  // loop through all the slides in your slideArray
-  // and remove the 'visible' class from each classList
-  // then add a class 'hidden' to all of them
-
-  // outside your .forEach,
-  // add a 'visible' class to the slide at the current slidePosition in slides
 }
 
+/* Done
+  add an if statement here that checks
+  if you're already at the max number of slides
+  and if so, sets your slidePosition to the first index of an array
+  if not, set the slidePosition to the current position plus one
+*/
 function moveToNextSlide() {
-  /*
-    add an if statement here that checks
-    if you're already at the max number of slides
-    and if so, sets your slidePosition to the first index of an array
-    if not, set the slidePosition to the current position plus one
-  */
-
   if (slidePosition === totalSlides - 1) {
     slidePosition = 0;
   } else {
@@ -51,14 +51,18 @@ function moveToNextSlide() {
   updateSlidePosition(); // this is how you call a function within a function
 }
 
+/* Done
+  add an if statement here that checks
+  if you're already at the first index position for an array
+  and if so, sets your slidePosition to the last slide position in totalSlides
+  if not, set the slidePosition to the current position minus one
+*/
 function moveToPrevSlide() {
-  // add your code in here for when you click the "prev" button
-  /*
-    add an if statement here that checks
-    if you're already at the first index position for an array
-    and if so, sets your slidePosition to the last slide position in totalSlides
-    if not, set the slidePosition to the current position minus one
-  */
+  if (slidePosition === 0) {
+    slidePosition = 3;
+  } else {
+    slidePosition -= 1;
+  }
   updateSlidePosition();
 }
 
