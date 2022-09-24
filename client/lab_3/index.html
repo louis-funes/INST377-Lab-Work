@@ -1,5 +1,62 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Louis Funes's Lab 2 </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+  <body>
+
+    <div class="wrapper"> <!-- #wrapper -->
+
+      <header class="header"><h1>Louis Funes's Labs For INST377</h1></header>
+
+      <div class="container"> <!-- #container -->
+
+        <div class="left_section box"> <!-- #left sec -->
+          <h2>Album Names</h2>
+          <ol class="box">
+            <li>Mac Miller - The Divine Feminine</li>
+            <li>Joji - Nectar</li>
+            <li>Harry Styles - Fine Line</li>
+            <li>System of a Down - Toxicity</li>
+            <li>Lana Del Rey - Born to Die</li>
+          </ol>
+        </div>
+
+
+
+        <div class="right_section box"> <!-- #right sec -->
+          <h2>Image Carousel</h2>
+          <div class="carousel">
+            <button class="prev">prev</button>
+            <div class="slides"> <!-- #contain the four images -->
+                <div class="carousel_item visible"><img id="pic1" src="images/1B.PNG" alt="Batman pose."/></div>
+                <div class="carousel_item hidden"><img id="pic2" src="images/2J.PNG" alt="Joker pose."/></div>
+                <div class="carousel_item hidden"><img id="pic3" src="images/3S.PNG" alt="Spiderman pose."/></div>
+                <div class="carousel_item hidden"><img id="pic4" src="images/4W.PNG" alt="Wolverine pose."/></div>
+            </div>
+            <button class="next">next</button>
+          </div>
+
+          <div class="box"> <!-- #description of images -->
+            <ol>
+              <li>Batman says "".</li>
+              <li>Joker says "".</li>
+              <li>Spiderman says "".</li>
+              <li>Wolverine says "". </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="footer"> <!-- #footer  -->
+        Github account name: louis-funes -> <a href="https://github.com/louis-funes">UMD INST377 - Louis Funes's Github account</a>
+      </footer>
+    </div>
+
+    <script src="script.js" ></script>
+  </body>
+</html>
