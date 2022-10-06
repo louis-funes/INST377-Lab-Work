@@ -1,5 +1,63 @@
-<!-- Bring in your successful HTML/CSS from the Flexbox lab -->
+
 <!-- Your page will need a form in it with an 'action' to /api and a single text field with an id/name of "resto" -->
 <!-- If you open /routes/apiRoutes and go to line 38 you will find the server side answer to your request! -->
 
 <!-- Temporarily unhook your script.js file from your main index file -->
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Louis Funes's Lab 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper "> <!-- #wrapper -->
+
+      <header class="header ">
+        <h1>Louis Funes's Labs For INST377</h1>
+      </header>
+
+      <div class="container "> <!-- #container -->
+        
+        <div class="left_section left_box "> <!-- left sec -->
+            <h2>Form Inputs</h2>
+   
+            
+            <div class= "res_inside left_box "  >
+                Restaurant Name
+                <form action="/api">
+                <label for="resto"></label>
+                <input type="text" name="resto" id="resto" />
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="right_section right_box "> <!-- right sec -->
+            <h2>Local restaurants</h2>
+
+                <div class="right_box ">
+                    A list of restaurants from an API  
+                </div>
+
+        </div>
+       
+      </div>
+
+
+      <footer class="footer"> <!-- #footer  -->
+        Github account name: louis-funes -> <a href="https://github.com/louis-funes">UMD INST377 - Louis Funes's Github account</a>
+      </footer>
+
+    </div>
+  </body>
+</html>
+
+
