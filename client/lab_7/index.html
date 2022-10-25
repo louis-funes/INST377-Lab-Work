@@ -1,0 +1,56 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Louis Funes's Lab 7</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper "> <!-- #wrapper -->
+
+      <header class="header ">
+        <h1>Louis Funes's Labs For INST377</h1>
+      </header>
+
+      <div class="container "> <!-- #container -->
+        
+        <div class="left_section left_box "> <!-- left sec -->
+            <h2>Form Inputs</h2>
+            
+            <div class= "res_inside left_box ">
+                Restaurant Name
+                <form action="/api" class="main_form">
+                <label for="resto"></label>
+                <input type="text" name="resto" id="resto" />
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+                <button type="submit" id="get-resto">Submit</button>
+                
+                </form>
+                
+            </div>
+
+        </div>
+
+        <div class="right_section right_box"> <!-- right sec -->
+            <h2>Local restaurants</h2>
+
+                <div class="right_box" id="restaurant_list">
+                    A list of restaurants from an API  
+                </div>
+
+        </div>
+      </div>
+
+      <footer class="footer"> <!-- #footer  -->
+        Github account name: louis-funes -> <a href="https://github.com/louis-funes">UMD INST377 - Louis Funes's Github account</a>
+      </footer>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
