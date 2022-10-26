@@ -52,19 +52,20 @@ function processRestaurants(list) {
   const newArray = range.map((item) => {
     const index = getRandomIntInclusive(0, list.length);
     return list[index];
-  })
+  });
   return newArray;
 }
 
 function filterList(list, filterInputValue) {
-    return list.filter((item) => {
-        if (!item.name) {return; }
-        const lowerCaseName = item.name.toLowerCase();
-        const lowerCaseQuery = filterInputValue.toLowerCase();
-        return lowerCaseName.includes(lowerCaseQuery);
-});
-     
-  /*
+  return list.filter((item) => {
+    if (!item.name) { return; }
+    const lowerCaseName = item.name.toLowerCase();
+    const lowerCaseQuery = filterInputValue.toLowerCase();
+    return lowerCaseName.includes(lowerCaseQuery);
+  });
+}
+
+/*
       ## Process Data Separately From Injecting It
         This function should accept your 1,000 records
         then select 15 random records
@@ -82,7 +83,6 @@ function filterList(list, filterInputValue) {
       - Return only their name, category, and location
       - Return the new list of 15 restaurants so we can work on it separately in the HTML injector
     */
-
 
 async function mainEvent() {
   /*
@@ -131,7 +131,7 @@ async function mainEvent() {
 
     let currentList = [];
 
-    form.addEventListener('input', (event)=> {
+    form.addEventListener('input', (event) => {
       console.log(event.target.value);
       const filteredList = filterList(currentList, event.target.value);
       injectHTML(filteredList);
