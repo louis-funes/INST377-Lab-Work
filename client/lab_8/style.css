@@ -412,7 +412,7 @@
   #map{
     display: block;
     width: 400px;
-    height: 380;
+    height: 360;
     border: 2px dashed rgb(99, 99, 99);
     margin: 1rem;
   }
